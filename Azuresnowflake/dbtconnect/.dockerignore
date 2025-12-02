@@ -1,0 +1,33 @@
+# Ignore Python cache and compiled files
+__pycache__/
+*.pyc
+
+# Ignore virtual environment and local environment files
+.venv/
+.env
+
+# Ignore git folder and any version control metadata
+.git/
+
+# Ignore logs
+logs/
+*.log
+
+# Ignore compiled dbt artifacts and targets
+target/
+dbt_packages/
+
+# Ignore node_modules if any (typical for frontend or if any JS code)
+node_modules/
+
+# Ignore Jupyter notebooks or temp files, if any
+*.ipynb_checkpoints
+*.ipynb
+
+# Ignore data output files and parquet caches
+db/schemas/**/output.parquet
+
+# Ignore IDE/editor configuration files
+.vscode/
+.idea/
+*.swp

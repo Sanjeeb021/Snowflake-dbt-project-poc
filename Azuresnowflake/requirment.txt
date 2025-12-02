@@ -1,0 +1,9 @@
+dbt-core==1.10.10
+dbt-snowflake==1.10.0
+fastapi
+uvicorn[standard]
+
+
+
+pydantic
+python-dotenv

@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: retail_bronze
+    database: SANJEEBDB
+    schema: retail_bronze
+    tables:
+      - name: stores
+      - name: products
+      - name: sales

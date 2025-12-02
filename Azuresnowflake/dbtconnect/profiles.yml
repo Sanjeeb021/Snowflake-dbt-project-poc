@@ -1,0 +1,25 @@
+
+dbtconnect:
+  outputs:
+    dev:
+      account: TAOIDIS-YJC71975
+      database: SANJEEBDB
+      password: Sanjeebnanu1234
+      role: ACCOUNTADMIN
+      schema: RETAIL_SILVER
+      threads: 4
+      type: snowflake
+      user: SANJEEB
+      warehouse: COMPUTE_WH
+    # Production environment configuration
+    prod:
+      account: TAOIDIS-YJC71975
+      database: SANJEEBDB
+      password: Sanjeebnanu1234
+      role: ACCOUNTADMIN
+      schema: RETAIL_SILVER # Using production schema
+      threads: 8          # Increased threads for production
+      type: snowflake
+      user: SANJEEB
+      warehouse: COMPUTE_WH  # Using production warehouse
+  target: prod
