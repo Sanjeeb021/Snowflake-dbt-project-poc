@@ -1,6 +1,6 @@
 {{ config(
     materialized = 'incremental',
-    unique_key = '"Sale_ID"',
+    unique_key = 'Sale_ID',
     tags = ['silver_layer', 'daily_refresh']
 ) }}
 
