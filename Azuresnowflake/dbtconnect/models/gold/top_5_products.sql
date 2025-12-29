@@ -26,10 +26,10 @@
 -- ============================================================
 with product_revenue as (
     select
-        s."Product_ID" as Product_ID,
-        sum(s."Total_Amount") as revenue   -- Total revenue for each product
+        s.Product_ID as Product_ID,
+        sum(s.Total_Amount) as revenue   -- Total revenue for each product
     from {{ ref('silver_sales') }} s
-    group by s."Product_ID"
+    group by s.Product_ID
 ),
 
 -- ============================================================

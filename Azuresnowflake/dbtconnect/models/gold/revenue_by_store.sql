@@ -6,11 +6,11 @@
 ) }}
 
 select
-    s."Store_ID" as Store_ID,
-    sum(s."Total_Amount") as total_revenue,
-    sum(s."Quantity") as total_quantity
+    s.Store_ID as Store_ID,
+    sum(s.Total_Amount) as total_revenue,
+    sum(s.Quantity) as total_quantity
 from {{ ref('silver_sales') }} s
 group by
-    s."Store_ID"
+    s.Store_ID
 order by
-    s."Store_ID"
+    s.Store_ID

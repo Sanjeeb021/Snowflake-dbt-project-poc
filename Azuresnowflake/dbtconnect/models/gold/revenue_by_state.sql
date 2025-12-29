@@ -9,14 +9,14 @@
 ) }}
 
 select
-    s."Store_ID" as Store_ID,
-    st."State" as State,
-    sum(s."Total_Amount") as Revenue
+    s.Store_ID as Store_ID,
+    st.State as State,
+    sum(s.Total_Amount) as Revenue
 from {{ ref('silver_sales') }} s
 join {{ ref('silver_stores') }} st
-    on s."Store_ID" = st."Store_ID"
+    on s.Store_ID = st.Store_ID
 group by
-    s."Store_ID",
-    st."State"
+    s.Store_ID,
+    st.State
 order by
-    st."State"
+    st.State
